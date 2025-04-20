@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quixotics</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <span class="header-title">Quixotics</span>
+        <ul>
+            <li><a href="">Work</a></li>
+            <li><a href="">Play</a></li>
+            <li><a href="">About</a></li>
+
+        </ul>
+    </div>
+
+    <div class="aboutme" id="aboutme">
+        <div class="aboutme-title">
+            <span class="aboutme-title-text">
+                <span>H</span>
+                <span>e</span>
+                <span>l</span>
+                <span>l</span>
+                <span>o</span>
+                <span>,</span>
+                <span>I</span>
+                <span>'</span>
+                <span>m</span>
+            </span>
+            <span class="aboutme-title-name"><strong>Izhar Atharzi Akbar Putra.</strong></span>
+        </div>
+        <span class="aboutme-subtitle">Also known as, Quixotics. <br> Fullstack Developer & Game Developer</span>
+        <i class='bx bx-chevrons-down'></i>
+    </div>
+
+    <div class="featured-projects">
+        <span>Featured projects</span>
+    </div>
+
+    <div class="procyon">
+        <span class="procyon-label"><i class='bx bxs-magic-wand'></i>Java Library</span>
+        <span class="procyon-title">Procyon</span>
+        <span class="procyon-subtitle"><strong>Made by Developer, for Developers.</strong></span>
+        <div class="procyon-buttons">
+            <button class="procyon-documentations">Wiki</button>
+            <button class="procyon-github"><i class='bx bxl-github' ></i>GitHub</button>
+        </div>
+        <span class="procyon-features-description">Procyon is a lightweight Java library designed to streamline backend development by providing utilities for logging, instance management, HTTP requests, MySQL, Redis connections, etc.</span>
+        <div class="procyon-features">
+            <div class="procyon-feature-card">
+                <span class="procyon-feature-card-title"><strong>Lightweight</strong></span>
+                <span class="procyon-feature-card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolores suscipit quisquam exercitationem tenetur eligendi quos quia, earum molestiae vel velit alias deleniti veniam blanditiis accusantium sed molestias obcaecati deserunt.</span>
+            </div>
+            <div class="procyon-feature-card">
+                <span class="procyon-feature-card-title"><strong>Modern</strong></span>
+                <span class="procyon-feature-card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolores suscipit quisquam exercitationem tenetur eligendi quos quia, earum molestiae vel velit alias deleniti veniam blanditiis accusantium sed molestias obcaecati deserunt.</span>
+            </div>
+            <div class="procyon-feature-card">
+                <span class="procyon-feature-card-title"><strong>Community</strong></span>
+                <span class="procyon-feature-card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolores suscipit quisquam exercitationem tenetur eligendi quos quia, earum molestiae vel velit alias deleniti veniam blanditiis accusantium sed molestias obcaecati deserunt.</span>
+            </div>
+            <div class="procyon-feature-card">
+                <span class="procyon-feature-card-title"><strong>Flexible</strong></span>
+                <span class="procyon-feature-card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolores suscipit quisquam exercitationem tenetur eligendi quos quia, earum molestiae vel velit alias deleniti veniam blanditiis accusantium sed molestias obcaecati deserunt.</span>
+            </div>
+            <div class="procyon-feature-card">
+                <span class="procyon-feature-card-title"><strong>Clean</strong></span>
+                <span class="procyon-feature-card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolores suscipit quisquam exercitationem tenetur eligendi quos quia, earum molestiae vel velit alias deleniti veniam blanditiis accusantium sed molestias obcaecati deserunt.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="aries">
+        <span class="aries-title">Aries</span>
+        <span class="aries-subtitle"><strong>Habit Artificial Intelligence. Under early development.</strong></span>
+        <div class="aries-blackhole">
+            <video src="/sources/public_videos_blackhole.webm" autoplay loop muted class="aries-video"></video>
+            <span class="aries-blackhole-title"><strong>Powerful as Blackhole.</strong></span>
+        </div>
+        <button class="aries-get-started">Get Started</button>
+        <span class="aries-description">
+            Aeris is a personal AI assistant designed to help with daily productivity and decision-making. It can manage reminders, act as a random decision maker, and function as a simple stopwatch. Built to be lightweight and practical, Aeris focuses on habit learning, behavior tracking, and eventually, smarter scheduling.
+        </span>
+    </div>
+    
+    <div class="explore-more-projects">
+        <span contenteditable role="textbox" aria-multiline="true">Explore my other projects<i class='bx bx-right-arrow-alt'></i></span>
+    </div>
+
+    <div class="footer">
+        <span class="footer-copyright">Copyright 2025 Izhar Atharzi Akbar Putra (Quixotics). All Rights Reserved.</span>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+        const latestDelay = 80; // Initial delay between spans
+        const spans = document.querySelectorAll('.aboutme-title-text span');
+
+        spans.forEach((span, index) => {
+            setTimeout(() => {
+                span.style.opacity = "1";
+                span.style.transition = "opacity 1s ease";  // Smooth transition
+            }, index * latestDelay);  // Use index * latestDelay to create sequential delays
+        });
+
+        const text = document.getElementById("aboutme")
+        text.style.marginTop = "22vh"
+    }
+</script>
+</html>
