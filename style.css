@@ -431,6 +431,7 @@ body {
 
     .aries .aries-subtitle {
         font-size: 3vh;
+        width: 90%;
         text-align: center;
     }
 
